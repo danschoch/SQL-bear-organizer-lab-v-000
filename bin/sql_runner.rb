@@ -7,7 +7,7 @@ class SQLRunner
   end
 
   def execute_create_file
-    sql = File.read("lib/create.sql");
+    sql = File.read("lib/create.sql")
     @db.execute_batch(sql)
   end
 
